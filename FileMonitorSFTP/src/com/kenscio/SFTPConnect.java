@@ -11,7 +11,6 @@ public class SFTPConnect {
 	
 	public static ChannelSftp getConnection()
 	{
-		
 		String user="sftp_demo";
 		String ip="5.9.80.147";
 		String psw = "sftpdemo123";
@@ -29,7 +28,6 @@ public class SFTPConnect {
 			session.connect();
 			sftpChannel = (ChannelSftp) session.openChannel("sftp");
 			sftpChannel.connect();
-
 		} 
 		catch (JSchException e) 
 		{
